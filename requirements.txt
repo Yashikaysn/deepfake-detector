@@ -1,0 +1,8 @@
+torch==2.2.2
+torchvision==0.17.2
+timm
+facenet-pytorch
+streamlit
+opencv-python
+Pillow
+numpy<2
