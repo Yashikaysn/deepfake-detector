@@ -1,0 +1,16 @@
+file_list = [ 
+              'report.csv',
+              'data.xlsx',
+              'summary.docx',
+              'report.csv',
+              'data.csv']
+
+seen = set()
+
+for file in file_list:
+    if file in seen:
+        print("Duplicate found")
+        break
+    seen.add(file)
+else:
+    print("All files are unique")

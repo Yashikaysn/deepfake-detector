@@ -1,0 +1,6 @@
+data/
+model/best_model.pth
+__pycache__/
+*.pyc
+.vscode/
+*.zip
