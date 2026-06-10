@@ -5,7 +5,7 @@
 ![Accuracy](https://img.shields.io/badge/Accuracy-99.7%25-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-> AI-powered deepfake detection system using EfficientNet-B4, trained on 100,000 real and fake face images.
+> AI-powered deepfake detection system using EfficientNet-B4, trained on 140,000 real and fake face images.
 
 ---
 
