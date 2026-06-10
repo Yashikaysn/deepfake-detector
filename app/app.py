@@ -41,10 +41,10 @@ transform = transforms.Compose([
 def predict_image(pil_img):
     tensor = transform(pil_img).unsqueeze(0)
     with torch.no_grad():
-        prob = model(tensor).item()  # single sigmoid output
-    fake_conf = round(prob * 100, 2)
-    real_conf = round((1 - prob) * 100, 2)
-    label = "🔴 FAKE" if prob > 0.5 else "🟢 REAL"
+        prob = model(tensor).item()
+    real_conf = round(prob * 100, 2)
+    fake_conf = round((1 - prob) * 100, 2)
+    label = "🔴 FAKE" if prob < 0.5 else "🟢 REAL"
     return label, fake_conf, real_conf
 
 # ── Image handler ─────────────────────────────────────────────────────────────
